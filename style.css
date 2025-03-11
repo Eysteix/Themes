@@ -1,0 +1,73 @@
+/* CSS Variables for different themes using custom properties */
+/* Light Theme - Default professional look with blue primary color */
+.theme-light {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --background: #ffffff;
+    --text: #212529;
+    --accent: #28a745;
+}
+
+/* Dark Theme - Dark mode with muted colors for low-light environments */
+.theme-dark {
+    --primary: #375a7f;
+    --secondary: #444444;
+    --background: #222222;
+    --text: #ffffff;
+    --accent: #00bc8c;
+}
+
+/* Nature Theme - Green-based palette inspired by natural elements */
+.theme-nature {
+    --primary: #2ecc71;
+    --secondary: #95a5a6;
+    --background: #f0f9f4;
+    --text: #2c3e50;
+    --accent: #f1c40f;
+}
+
+/* Ocean Theme - Blue-based palette with marine-inspired colors */
+.theme-ocean {
+    --primary: #3498db;    /* Main blue color for primary elements */
+    --secondary: #7f8c8d;  /* Neutral gray for secondary elements */
+    --background: #ecf0f1; /* Light bluish-gray background */
+    --text: #2c3e50;      /* Dark blue-gray for readable text */
+    --accent: #e74c3c;    /* Red accent for highlights and emphasis */
+}
+
+/* Sunset Theme - Warm colors inspired by sunset hues */
+.theme-sunset {
+    --primary: #e74c3c;    /* Warm red for primary elements */
+    --secondary: #f39c12;  /* Orange for secondary elements */
+    --background: #fff5f5; /* Soft pink background */
+    --text: #34495e;      /* Dark blue-gray for readable text */
+    --accent: #9b59b6;    /* Purple accent for variety */
+}
+
+/* Apply theme colors to body element */
+body {
+    background-color: var(--background); /* Use theme background color */
+    color: var(--text);                 /* Use theme text color */
+}
+
+/* Container for theme selection buttons */
+.theme-buttons {
+    display: flex;                      /* Horizontal layout */
+    gap: 1rem;                         /* Space between buttons */
+    padding: 1rem;                     /* Padding around button container */
+}
+
+/* Style for individual theme buttons */
+.theme-buttons button {
+    padding: 0.5rem 1rem;              /* Button padding */
+    border: none;                      /* Remove default border */
+    border-radius: 4px;                /* Rounded corners */
+    cursor: pointer;                   /* Hand cursor on hover */
+    background-color: var(--primary);  /* Theme primary color for button */
+    color: var(--background);          /* Theme background color for text */
+}
+
+/* Button hover effect */
+.theme-buttons button:hover {
+    background-color: var(--accent);   /* Change to accent color on hover */
+}
